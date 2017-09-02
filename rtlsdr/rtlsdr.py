@@ -93,8 +93,8 @@ class BaseRtlSdr(object):
         self.valid_gains_db = [val/10 for val in self.gain_values]
 
         # set default state
-        self.set_sample_rate(self.DEFAULT_RS)
         self.set_center_freq(self.DEFAULT_FC)
+        self.set_sample_rate(self.DEFAULT_RS)
         self.set_gain(self.DEFAULT_GAIN)
 
     def close(self):
